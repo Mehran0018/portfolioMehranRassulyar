@@ -6,7 +6,7 @@
 
 # Link
 
-- [Live-preview](https://azanra.github.io/personal-portfolio-template/)
+Volgt nog
 
 # About
 
@@ -16,4 +16,4 @@ Mijn portfolio
 
 # Screenshot
 
-![alt-text](./image/ppt-ui.png)
+Volgt nog
