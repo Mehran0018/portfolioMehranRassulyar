@@ -255,6 +255,7 @@ textarea {
 
 .light-mode #mode-toggle {
   color: #111111;
+  text-color: #f2f2f2;
 }
 
 .dark-mode #mode-toggle {
