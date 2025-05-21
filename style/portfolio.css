@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root {
-  --font-base: 'Poppins', sans-serif;
-  --font-code: 'IBM Plex Mono', monospace;
+  --font-base: 'Inter', sans-serif;
 
-  /* Kleuren */
-  --header-bg-color: #2E112D;
-  --header-nav-bg-color: #1B1B1B;
-  --main-text-color: #DDECEC;
-  --name-text-color: #ffffff;
+  /* Kleuren: modern en strak */
+  --header-bg-color: #0D0D0D;
+  --header-nav-bg-color: #1A1A1A;
+  --main-text-color: #F2F2F2;
+  --name-text-color: #FFFFFF;
 
   --started-btn-color: #1B4965;
-  --started-btn-shadow: #2E6C96;
+  --started-btn-shadow: rgba(27, 73, 101, 0.5);
 
-  --first-btn-color: #5C2751;
-  --first-category-color: #FBEFF2;
+  --first-btn-color: #1B4965;
+  --first-category-color: #EAEAEA;
 
-  --second-btn-color: #114B5F;
-  --second-category-color: #DDECEC;
+  --second-btn-color: #2E5A78;
+  --second-category-color: #F3F3F3;
 
-  --third-btn-color: #305F72;
-  --third-category-color: #F0F8F9;
+  --third-btn-color: #447D9C;
+  --third-category-color: #F8F8F8;
 }
 
 /* BASIS */
@@ -38,7 +37,8 @@ body {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 600;
   margin-bottom: 0.5em;
 }
 
@@ -143,7 +143,6 @@ p {
   text-align: center;
   padding: 1.5rem;
   border-radius: 8px;
-  font-family: var(--font-code);
   font-size: 0.9rem;
 }
 
@@ -219,10 +218,10 @@ textarea {
 
 /* DARK MODE */
 .dark-mode {
-  --header-bg-color: #1A0E1F;
-  --header-nav-bg-color: #1F1F1F;
-  --main-text-color: #E0E0E0;
-  --name-text-color: #ffffff;
-  --started-btn-color: #153C56;
-  --started-btn-shadow: #1E5B84;
+  --header-bg-color: #0A0A0A;
+  --header-nav-bg-color: #181818;
+  --main-text-color: #E5E5E5;
+  --name-text-color: #FFFFFF;
+  --started-btn-color: #122F41;
+  --started-btn-shadow: rgba(27, 73, 101, 0.4);
 }
