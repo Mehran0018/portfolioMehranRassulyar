@@ -1,119 +1,133 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV Mehran Rassulyar</title>
-  <link rel="stylesheet" href="style/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Mehran Rassulyar</title>
+
+    <link rel="stylesheet" href="style/portfolio.css" />
+
+    <script src="portfolio.js" defer async></script>
 </head>
 <body>
+
+<!-- HEADER -->
 <div class="header">
-  <div class="nav-section">
-    <a href="#">Home</a>
-    <a href="#">Over mij</a>
-    <a href="#">Werkervaring</a>
-    <a href="#">Talen</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <div class="header-main-section">
-    <div class="header-info">
-      <div class="header-info-name">
-        <h2>Mehran Rassulyar</h2>
-      </div>
-      <div class="header-info-intro">
-        <p>
-          Ik ben een gemotiveerde student Software Development met oog voor detail en een passie voor programmeren en design. Ik leer snel, werk nauwkeurig en kan goed samenwerken in een team. Mijn doel is om mezelf te blijven ontwikkelen binnen de IT-wereld.
-        </p>
-      </div>
-      <div class="header-info-btn">
-        <a href="/files/CV.pdf" download><button>Download mijn CV ></button></a>
-      </div>
+    <div class="nav-section">
+        <a href="#">Home</a>
+        <a href="#overmij">Over mij</a>
+        <a href="#project">Project</a>
+        <a href="#talen">Talen</a>
+        <a href="#contact">Contact</a>
+        <button id="mode-toggle" style="background:none;border:none;color:white;font-size:1.2em;">
+            Licht / Donker
+        </button>
     </div>
-    <div class="header-image-container">
-      <div class="header-image"></div>
+
+    <div class="header-main-section">
+        <div class="header-info">
+            <div class="header-info-name">
+                <h2>Mehran Rassulyar</h2>
+            </div>
+            <div class="header-info-intro">
+                <p>
+                    Ik ben een gemotiveerde student Software Development. Ik hou van programmeren, websites maken en werken met Arduino. Ik leer snel, ben creatief en werk graag samen.
+                </p>
+            </div>
+            <div class="header-info-btn">
+                <a href="/files/CV.pdf" download><button>Download mijn profiel ></button></a>
+            </div>
+        </div>
+        <div class="header-image-container">
+            <div class="header-image"></div>
+        </div>
     </div>
-  </div>
-  <div class="header-company">
-    <p>Mijn talen</p>
-    <div class="company-logo-container">
-      <div class="header-company-logo">HTML, CSS, javascript</div>
-      <div class="header-company-logo">C#</div>
-      <div class="header-company-logo">Arduino</div>
-      <div class="header-company-logo">PHP</div>
-      <div class="header-company-logo">MySQL</div>
+
+    <div class="header-company" id="talen">
+        <p>Mijn vaardigheden</p>
+        <div class="company-logo-container">
+            <div class="header-company-logo">HTML, CSS, JavaScript</div>
+            <div class="header-company-logo">C#</div>
+            <div class="header-company-logo">Arduino</div>
+            <div class="header-company-logo">PHP</div>
+            <div class="header-company-logo">MySQL</div>
+        </div>
     </div>
-  </div>
 </div>
 
-<div class="case-studies">
-  <div class="case-text-container">
-    <div class="case-text-header">
-      <h2>Over mij</h2>
+<!-- OVER MIJ -->
+<div class="case-studies" id="overmij">
+    <div class="case-text-container">
+        <div class="case-text-header">
+            <h2>Over mij</h2>
+        </div>
+        <div class="case-text">
+            <p>
+                Mijn naam is Mehran Rassulyar, ik ben 16 jaar en studeer Software Development op MBO niveau 4 in Velp. Ik ben nieuwsgierig, leer graag nieuwe dingen en wil mezelf blijven ontwikkelen als maker.
+            </p>
+        </div>
     </div>
-    <div class="case-text">
-      <p>
-        Mijn naam is Mehran Rassulyar, ik ben 16 jaar en studeer Software Development op MBO niveau 4 in Velp. Ik ben leergierig, creatief en kan goed zelfstandig en in teamverband werken.
-      </p>
-    </div>
-  </div>
 </div>
 
-<div class="testimonial">
-  <div class="testimonial-content-container">
-    <div class="testimonial-header">
-      <h2>Werkervaring</h2>
-      <p>
-        Augustus 2023 – heden: Vulploegmedewerker bij Albert Heijn, waar ik verantwoordelijk ben voor het aanvullen van schappen, netjes houden van de winkel en samenwerken met collega’s.
-      </p>
+<!-- PROJECT -->
+<div class="testimonial" id="project">
+    <div class="testimonial-content-container">
+        <div class="testimonial-header">
+            <h2></h2>
+            <p>
+
+            </p>
+        </div>
     </div>
-  </div>
 </div>
 
+<!-- CONTACT -->
 <div class="contact" id="contact">
-  <div class="contact-header">
-    <h2>Contact</h2>
-    <p>Heb je vragen of wil je contact opnemen? Vul dan hieronder het formulier in.</p>
-  </div>
-  <div class="contact-main">
-    <form action="" method="get">
-      <div class="email-container">
-        <label for="email-input">Email</label>
-        <input
-                type="email"
-                id="email-input"
-                name="email"
-                placeholder="Vul hier je email in"
-        />
-      </div>
-      <div class="phone-container">
-        <label for="phone-input">Telefoon</label>
-        <input
-                type="tel"
-                id="phone-input"
-                name="phone"
-                placeholder="Vul hier je telefoonnummer in"
-        />
-      </div>
-      <div class="message-container">
-        <label for="message-input">Bericht</label>
-        <textarea
-                name="message"
-                id="message-input"
-                cols="30"
-                rows="5"
-                placeholder="Typ hier je bericht"
-        ></textarea>
-      </div>
-      <div class="form-submit">
-        <button>Verzenden ></button>
-      </div>
-    </form>
-  </div>
+    <div class="contact-header">
+        <h2>Contact</h2>
+        <p>Wil je iets vragen of samenwerken? Vul het formulier hieronder in.</p>
+    </div>
+    <div class="contact-main">
+        <form action="" method="get">
+            <div class="email-container">
+                <label for="email-input">Email</label>
+                <input
+                        type="email"
+                        id="email-input"
+                        name="email"
+                        placeholder="Vul hier je email in"
+                />
+            </div>
+            <div class="phone-container">
+                <label for="phone-input">Telefoon</label>
+                <input
+                        type="tel"
+                        id="phone-input"
+                        name="phone"
+                        placeholder="Vul hier je telefoonnummer in"
+                />
+            </div>
+            <div class="message-container">
+                <label for="message-input">Bericht</label>
+                <textarea
+                        name="message"
+                        id="message-input"
+                        cols="30"
+                        rows="5"
+                        placeholder="Typ hier je bericht"
+                ></textarea>
+            </div>
+            <div class="form-submit">
+                <button>Verzenden ></button>
+            </div>
+        </form>
+    </div>
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
-  <p>Gemaakt door Mehran Rassulyar</p>
+    <p>Gemaakt door Mehran Rassulyar</p>
 </div>
+
 </body>
 </html>
-

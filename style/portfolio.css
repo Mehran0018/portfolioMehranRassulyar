@@ -386,3 +386,14 @@ input,
   color: red;
   font-size: 1.5rem;
 }
+
+.dark-mode {
+    --header-bg-color: #111;
+    --header-nav-bg-color: #222;
+    --main-text-color: #ccc;
+    --name-text-color: white;
+    --started-btn-color: #3f8e00;
+    --started-btn-shadow: #62ba1b;
+}
+
+
