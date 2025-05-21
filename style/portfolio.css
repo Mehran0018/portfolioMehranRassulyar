@@ -3,7 +3,27 @@
 :root {
   --font-base: 'Inter', sans-serif;
 
-  /* Kleuren: modern en strak */
+  /* LIGHT MODE (standaard) */
+  --header-bg-color: #ffffff;
+  --header-nav-bg-color: #f0f0f0;
+  --main-text-color: #111111;
+  --name-text-color: #000000;
+
+  --started-btn-color: #1B4965;
+  --started-btn-shadow: rgba(27, 73, 101, 0.2);
+
+  --first-btn-color: #1B4965;
+  --first-category-color: #e4f1f9;
+
+  --second-btn-color: #2E5A78;
+  --second-category-color: #f3f7f9;
+
+  --third-btn-color: #447D9C;
+  --third-category-color: #f8fbfc;
+}
+
+/* DARK MODE */
+.dark-mode {
   --header-bg-color: #0D0D0D;
   --header-nav-bg-color: #1A1A1A;
   --main-text-color: #F2F2F2;
@@ -13,13 +33,13 @@
   --started-btn-shadow: rgba(27, 73, 101, 0.5);
 
   --first-btn-color: #1B4965;
-  --first-category-color: #EAEAEA;
+  --first-category-color: #2C2C2C;
 
   --second-btn-color: #2E5A78;
-  --second-category-color: #F3F3F3;
+  --second-category-color: #1F1F1F;
 
   --third-btn-color: #447D9C;
-  --third-category-color: #F8F8F8;
+  --third-category-color: #202020;
 }
 
 /* BASIS */
@@ -214,14 +234,4 @@ textarea {
   color: var(--main-text-color);
   text-align: center;
   padding: 2rem;
-}
-
-/* DARK MODE */
-.dark-mode {
-  --header-bg-color: #0A0A0A;
-  --header-nav-bg-color: #181818;
-  --main-text-color: #E5E5E5;
-  --name-text-color: #FFFFFF;
-  --started-btn-color: #122F41;
-  --started-btn-shadow: rgba(27, 73, 101, 0.4);
 }
