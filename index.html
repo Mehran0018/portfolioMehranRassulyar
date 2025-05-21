@@ -1,386 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="header">
-      <div class="nav-section">
-        <a href="">Home</a>
-        <a href="">Case Studies</a>
-        <a href="">Testimonials</a>
-        <a href="">Recent work</a>
-        <a href="">Get In Touch</a>
-        <div class="link-section">
-          <svg
-            width="18"
-            height="17"
-            viewBox="0 0 18 17"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              opacity="0.3"
-              d="M0 1.97499C0 1.40259 0.202708 0.930366 0.608108 0.558324C1.01351 0.186265 1.54055 0.000244141 2.18919 0.000244141C2.82626 0.000244141 3.34169 0.183397 3.73552 0.549738C4.14092 0.927515 4.34363 1.41976 4.34363 2.0265C4.34363 2.576 4.14672 3.0339 3.7529 3.40024C3.3475 3.77802 2.81467 3.9669 2.15444 3.9669H2.13707C1.49999 3.9669 0.984562 3.77802 0.590734 3.40024C0.196905 3.02246 0 2.54737 0 1.97499ZM0.225869 17.0002V5.52953H4.08301V17.0002H0.225869ZM6.22008 17.0002H10.0772V10.5952C10.0772 10.1945 10.1236 9.8854 10.2162 9.6679C10.3784 9.27867 10.6245 8.94954 10.9546 8.68053C11.2847 8.4115 11.6988 8.277 12.1969 8.277C13.4942 8.277 14.1429 9.1413 14.1429 10.8699V17.0002H18V10.4235C18 8.72918 17.5946 7.44417 16.7838 6.56842C15.973 5.69266 14.9016 5.25478 13.5695 5.25478C12.0753 5.25478 10.9112 5.89013 10.0772 7.16084V7.19518H10.0598L10.0772 7.16084V5.52953H6.22008C6.24324 5.89585 6.25483 7.0349 6.25483 8.94669C6.25483 10.8585 6.24324 13.543 6.22008 17.0002Z"
-              fill="white"
-            />
-          </svg>
-          <svg
-            width="22"
-            height="14"
-            viewBox="0 0 22 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              opacity="0.3"
-              d="M19.4963 0.691124H14.0261V2.21242H19.5178L19.4963 0.691124ZM18.3418 11.1567C17.9268 11.4317 17.4368 11.5712 16.9392 11.556C16.6098 11.5903 16.2769 11.5563 15.9613 11.456C15.6457 11.3558 15.3542 11.1914 15.105 10.9733C14.6443 10.451 14.4045 9.77017 14.4361 9.07441H21.5786C21.6301 8.34996 21.5682 7.62192 21.3952 6.91655C21.2278 6.24548 20.9349 5.61216 20.532 5.05C20.1265 4.50471 19.6027 4.05838 19 3.7445C18.3293 3.41385 17.5897 3.24743 16.8421 3.25898C16.139 3.25383 15.4419 3.38957 14.7921 3.65818C14.1971 3.90903 13.658 4.2758 13.2061 4.73711C12.7555 5.20765 12.4066 5.76589 12.1811 6.37709C11.9391 7.03691 11.8185 7.73507 11.8251 8.43784C11.814 9.15059 11.9309 9.85955 12.1703 10.531C12.3737 11.139 12.6965 11.7002 13.1198 12.1817C13.5577 12.6545 14.096 13.0231 14.695 13.2607C15.363 13.5152 16.0734 13.6397 16.7882 13.6275C17.7909 13.6588 18.781 13.3962 19.6365 12.8722C20.5007 12.2582 21.1228 11.3612 21.3952 10.3368H19.0108C18.8831 10.6757 18.6482 10.9636 18.3418 11.1567ZM14.6411 6.71156C14.7251 6.44256 14.8644 6.19414 15.0503 5.98229C15.2361 5.77045 15.4642 5.59988 15.72 5.48158C16.0588 5.32911 16.4276 5.25533 16.7989 5.26579C17.0672 5.24288 17.3372 5.27826 17.5905 5.36952C17.8438 5.46077 18.0743 5.60574 18.2663 5.79447C18.6329 6.24323 18.8682 6.7847 18.946 7.35891H14.4685C14.4859 7.13966 14.5257 6.92275 14.5871 6.71156H14.6411ZM8.93354 6.19367C9.48268 5.965 9.95983 5.59223 10.3146 5.11474C10.6407 4.60765 10.8026 4.01243 10.7785 3.41003C10.7997 2.86068 10.6925 2.31396 10.4656 1.81321C10.275 1.37939 9.96897 1.0062 9.5809 0.734281C9.16945 0.451573 8.70223 0.260267 8.21066 0.173238C7.62892 0.051225 7.03556 -0.00666339 6.44121 0.000608901H0V13.5736H6.58147C7.1821 13.574 7.78034 13.4978 8.36171 13.347C8.91277 13.2044 9.43484 12.9671 9.90458 12.6457C10.3596 12.3303 10.7301 11.9079 10.9835 11.4157C11.2639 10.8652 11.4012 10.253 11.3827 9.63546C11.4031 8.87021 11.1885 8.11709 10.7677 7.4776C10.3152 6.83447 9.64404 6.37808 8.8796 6.19367H8.93354ZM2.98864 2.32031H5.78307C6.03979 2.31999 6.29607 2.34165 6.54911 2.38505C6.7821 2.41957 7.00586 2.50027 7.20725 2.62241C7.40184 2.73248 7.5595 2.89765 7.66041 3.09714C7.78537 3.33636 7.84492 3.60434 7.83303 3.87397C7.85314 4.1062 7.81762 4.33987 7.72944 4.55564C7.64126 4.77141 7.50294 4.96307 7.32594 5.11474C6.93981 5.38019 6.47777 5.51274 6.00964 5.49236H2.98864V2.32031ZM8.21066 10.3476C8.09981 10.5674 7.93218 10.7537 7.72514 10.887C7.50968 11.021 7.27228 11.116 7.02384 11.1675C6.74769 11.2294 6.46521 11.2583 6.18227 11.2539H2.94548V7.53154H6.18227C6.73772 7.50722 7.28625 7.66232 7.74672 7.97391C7.95475 8.16059 8.1159 8.39364 8.21712 8.65419C8.31834 8.91473 8.35678 9.19545 8.32934 9.47362C8.35851 9.7702 8.31787 10.0695 8.21066 10.3476Z"
-              fill="white"
-            />
-          </svg>
-          <svg
-            width="18"
-            height="15"
-            viewBox="0 0 18 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              opacity="0.3"
-              d="M17.5417 1.71084C16.8824 1.99685 16.1852 2.18592 15.4718 2.27217C16.2244 1.82251 16.7885 1.11511 17.0593 0.281193C16.352 0.702249 15.5777 0.998908 14.7701 1.15828C14.2303 0.572887 13.5114 0.18322 12.7263 0.05039C11.9412 -0.0824399 11.1342 0.0490805 10.4319 0.424324C9.72952 0.799568 9.17161 1.39731 8.8456 2.1238C8.5196 2.8503 8.44394 3.66445 8.63051 4.43857C7.20036 4.36623 5.80142 3.99385 4.52457 3.3456C3.24773 2.69736 2.12153 1.78775 1.21915 0.675881C0.90264 1.22859 0.736329 1.85453 0.73675 2.49144C0.735628 3.08293 0.880783 3.66552 1.15929 4.18734C1.4378 4.70916 1.84102 5.15402 2.33304 5.4823C1.76116 5.46674 1.2015 5.31329 0.701667 5.03499V5.07884C0.705953 5.90759 0.996362 6.70942 1.52377 7.3487C2.05118 7.98799 2.78321 8.42548 3.59604 8.58718C3.28315 8.6824 2.95829 8.7326 2.63125 8.73628C2.40487 8.73364 2.17905 8.71311 1.9559 8.67489C2.18737 9.38779 2.63531 10.0108 3.23738 10.4573C3.83946 10.9037 4.56573 11.1514 5.31513 11.1658C4.04967 12.1615 2.48731 12.705 0.877084 12.7095C0.583906 12.7104 0.29096 12.6929 0 12.6568C1.64403 13.7183 3.55992 14.2818 5.51686 14.2795C6.8673 14.2935 8.20699 14.0383 9.4577 13.5287C10.7084 13.0192 11.845 12.2656 12.8012 11.3118C13.7574 10.3581 14.514 9.22341 15.0267 7.97401C15.5394 6.72462 15.7981 5.38558 15.7875 4.03511C15.7875 3.88601 15.7875 3.72813 15.7875 3.57026C16.4758 3.057 17.0693 2.42779 17.5417 1.71084Z"
-              fill="white"
-            />
-          </svg>
-        </div>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Mehran Rassulyar</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+<div class="header">
+  <div class="nav-section">
+    <a href="#">Home</a>
+    <a href="#">Over mij</a>
+    <a href="#">Werkervaring</a>
+    <a href="#">Talen</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="header-main-section">
+    <div class="header-info">
+      <div class="header-info-name">
+        <h2>Mehran Rassulyar</h2>
       </div>
-      <div class="header-main-section">
-        <div class="header-info">
-          <div class="header-info-name">
-            <h2>Mehran Rassulyar</h2>
-          </div>
-          <div class="header-info-intro">
-            <p>
-              Intro text: Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Officia blanditiis similique tempore culpa odit natus facere
-              exercitationem maxime! Dignissimos distinctio assumenda,
-              perferendis voluptas ipsa tempore consequuntur magnam labore!
-              Deserunt, excepturi.
-            </p>
-          </div>
-          <div class="header-info-btn">
-            <button>Let's get started ></button>
-          </div>
-        </div>
-        <div class="header-image-container">
-          <div class="header-image"></div>
-        </div>
-      </div>
-      <div class="header-company">
-        <p>Worked with</p>
-        <div class="company-logo-container">
-          <div class="header-company-logo"></div>
-          <div class="header-company-logo"></div>
-          <div class="header-company-logo"></div>
-          <div class="header-company-logo"></div>
-          <div class="header-company-logo"></div>
-        </div>
-      </div>
-    </div>
-    <div class="case-studies">
-      <div class="case-text-container">
-        <div class="case-text-header">
-          <h2>Case Studies</h2>
-        </div>
-        <div class="case-text">
-          <p>
-            Solving user & business problems since last 5+ years. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Sit optio libero magni
-            aliquid quia nam ab cumque maxime, debitis hic nulla porro,
-            molestiae temporibus, consectetur iusto possimus ipsam minima quos!
-          </p>
-        </div>
-      </div>
-      <div class="case-work-container">
-        <div class="case-first-work">
-          <div class="case-first-text">
-            <div class="case-first-category work-text category-text">
-              <p>Fintech</p>
-            </div>
-            <div class="case-first-header work-text">
-              <h2>Work name here</h2>
-            </div>
-            <div class="case-first-about work-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              alias ratione adipisci amet, molestias odio mollitia, aliquid nemo
-              non modi atque recusandae quisquam nisi aut tempora provident
-              exercitationem dolorum unde!
-            </div>
-            <div class="case-first-btn work-text">
-              <button>View case study ></button>
-            </div>
-          </div>
-          <div class="case-first-image-container">
-            <div class="case-first-image"></div>
-          </div>
-        </div>
-        <div class="case-second-work">
-          <div class="case-second-image-container">
-            <div class="case-second-image"></div>
-          </div>
-          <div class="case-second-text work-text">
-            <div class="case-second-category category-text">
-              <p>EdTech</p>
-            </div>
-            <div class="case-second-header work-text">
-              <h2>Work name here</h2>
-            </div>
-            <div class="case-second-about work-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus maiores quaerat autem vero, cum doloremque cupiditate
-              itaque earum laborum eius sapiente nulla distinctio ullam
-              perferendis. Unde minus error laboriosam ab?
-            </div>
-            <div class="case-second-btn work-text">
-              <button>View case study</button>
-            </div>
-          </div>
-        </div>
-        <div class="case-third-work">
-          <div class="case-third-text work-text">
-            <div class="case-third-category category-text">
-              <p>Pharma</p>
-            </div>
-            <div class="case-third-header work-text">
-              <h2>Work name here</h2>
-            </div>
-            <div class="case-third-about work-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              suscipit temporibus aliquam? Natus expedita assumenda quis ipsam
-              id ad, libero officiis laboriosam praesentium? Obcaecati eaque sed
-              ex vitae natus laborum.
-            </div>
-            <div class="case-third-btn work-text">
-              <button>View case study</button>
-            </div>
-          </div>
-          <div class="case-third-image-container">
-            <div class="case-third-image"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial-content-container">
-        <div class="testimonial-header">
-          <h2>Testimonials</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-        <div class="testimonial-main">
-          <div class="testimonial-container">
-            <div class="testi-text">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
-            <div class="testi-info">
-              <div class="testi-profile"></div>
-              <div class="testi-name">Client Name</div>
-            </div>
-          </div>
-          <div class="testimonial-container">
-            <div class="testi-text">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
-            <div class="testi-info">
-              <div class="testi-profile"></div>
-              <div class="testi-name">Client Name</div>
-            </div>
-          </div>
-          <div class="testimonial-container">
-            <div class="testi-text">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
-            <div class="testi-info">
-              <div class="testi-profile"></div>
-              <div class="testi-name">Client Name</div>
-            </div>
-          </div>
-          <div class="testimonial-container">
-            <div class="testi-text">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
-            <div class="testi-info">
-              <div class="testi-profile"></div>
-              <div class="testi-name">Client Name</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="recent-work">
-      <div class="recent-header">
-        <h2>Recent Work</h2>
+      <div class="header-info-intro">
         <p>
-          Solving user & business problems since last 5+ years. Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Sit optio libero magni
-          aliquid quia nam ab cumque maxime, debitis hic nulla porro, molestiae
-          temporibus, consectetur iusto possimus ipsam minima quos!
+          Ik ben een gemotiveerde student Software Development met oog voor detail en een passie voor programmeren en design. Ik leer snel, werk nauwkeurig en kan goed samenwerken in een team. Mijn doel is om mezelf te blijven ontwikkelen binnen de IT-wereld.
         </p>
       </div>
-      <div class="recent-main">
-        <div class="left-arrow">
-          <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="-0.5"
-              y="0.5"
-              width="28.8929"
-              height="29"
-              rx="14.4464"
-              transform="matrix(-1 0 0 1 28.8931 0)"
-              stroke="#9C9C9C"
-            />
-            <path
-              d="M12.2597 14.3736L16.3793 10.2592C16.7253 9.9136 17.2875 9.9136 17.6335 10.2592C17.9796 10.6048 17.9796 11.1663 17.6335 11.5119L14.1411 15L17.6335 18.4881C17.9796 18.8337 17.9796 19.3952 17.6335 19.7408C17.4605 19.9136 17.2335 20 17.0064 20C16.7793 20 16.5523 19.9136 16.3793 19.7408L12.2597 15.6264C11.9137 15.2808 11.9137 14.7193 12.2597 14.3737L12.2597 14.3736Z"
-              fill="#9C9C9C"
-            />
-          </svg>
-        </div>
-        <div class="recent-work-container middle-margin">
-          <div class="recent-image-container">
-            <div class="recent-image"></div>
-          </div>
-          <div class="recent-text">
-            <div class="recent-work-header">
-              <h2>Work name here</h2>
-            </div>
-            <div class="recent-desc">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
-            <div class="recent-btn">
-              <button>Know more ></button>
-            </div>
-          </div>
-        </div>
-        <div class="recent-work-container">
-          <div class="recent-image-container">
-            <div class="recent-image"></div>
-          </div>
-          <div class="recent-text">
-            <div class="recent-work-header">
-              <h2>Work name here</h2>
-            </div>
-            <div class="recent-desc">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
-            <div class="recent-btn">
-              <button>Know more ></button>
-            </div>
-          </div>
-        </div>
-        <div class="right-arrow">
-          <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="0.5"
-              y="0.5"
-              width="28.8929"
-              height="29"
-              rx="14.4464"
-              stroke="#9C9C9C"
-            />
-            <path
-              d="M17.6333 14.3736L13.5138 10.2592C13.1678 9.9136 12.6056 9.9136 12.2595 10.2592C11.9135 10.6048 11.9135 11.1663 12.2595 11.5119L15.752 15L12.2595 18.4881C11.9135 18.8337 11.9135 19.3952 12.2595 19.7408C12.4325 19.9136 12.6596 20 12.8867 20C13.1137 20 13.3408 19.9136 13.5138 19.7408L17.6333 15.6264C17.9794 15.2808 17.9794 14.7193 17.6333 14.3737L17.6333 14.3736Z"
-              fill="#9C9C9C"
-            />
-          </svg>
-        </div>
+      <div class="header-info-btn">
+        <a href="/files/CV.pdf" download><button>Download mijn CV ></button></a>
       </div>
     </div>
-    <div class="contact">
-      <div class="contact-header">
-        <h2>Get In Touch</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
-      </div>
-      <div class="contact-main">
-        <form action="" method="get">
-          <div class="email-container">
-            <label for="email-input">Email</label>
-            <input
-              type="email"
-              id="email-input"
-              name="email"
-              placeholder="Please enter your email"
-            />
-          </div>
-          <div class="phone-container">
-            <label for="phone-input">Phone</label>
-            <input
-              type="tel"
-              id="phone-input"
-              name="phone"
-              placeholder="Enter phone number"
-            />
-          </div>
-          <div class="message-container">
-            <label for="message-input">Message</label>
-            <textarea
-              name="message"
-              id="message-input"
-              cols="30"
-              rows="5"
-              placeholder="Enter your message"
-            ></textarea>
-          </div>
-          <div class="form-submit">
-            <button>Submit ></button>
-          </div>
-        </form>
-      </div>
+    <div class="header-image-container">
+      <div class="header-image"></div>
     </div>
-    <div class="footer">
-      <p>Made with <span>❤️</span></p>
+  </div>
+  <div class="header-company">
+    <p>Mijn talen</p>
+    <div class="company-logo-container">
+      <div class="header-company-logo">HTML, CSS, javascript</div>
+      <div class="header-company-logo">C#</div>
+      <div class="header-company-logo">Arduino</div>
+      <div class="header-company-logo">PHP</div>
+      <div class="header-company-logo">MySQL</div>
     </div>
-  </body>
+  </div>
+</div>
+
+<div class="case-studies">
+  <div class="case-text-container">
+    <div class="case-text-header">
+      <h2>Over mij</h2>
+    </div>
+    <div class="case-text">
+      <p>
+        Mijn naam is Mehran Rassulyar, ik ben 16 jaar en studeer Software Development op MBO niveau 4 in Velp. Ik ben leergierig, creatief en kan goed zelfstandig en in teamverband werken.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="testimonial">
+  <div class="testimonial-content-container">
+    <div class="testimonial-header">
+      <h2>Werkervaring</h2>
+      <p>
+        Augustus 2023 – heden: Vulploegmedewerker bij Albert Heijn, waar ik verantwoordelijk ben voor het aanvullen van schappen, netjes houden van de winkel en samenwerken met collega’s.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="contact" id="contact">
+  <div class="contact-header">
+    <h2>Contact</h2>
+    <p>Heb je vragen of wil je contact opnemen? Vul dan hieronder het formulier in.</p>
+  </div>
+  <div class="contact-main">
+    <form action="" method="get">
+      <div class="email-container">
+        <label for="email-input">Email</label>
+        <input
+                type="email"
+                id="email-input"
+                name="email"
+                placeholder="Vul hier je email in"
+        />
+      </div>
+      <div class="phone-container">
+        <label for="phone-input">Telefoon</label>
+        <input
+                type="tel"
+                id="phone-input"
+                name="phone"
+                placeholder="Vul hier je telefoonnummer in"
+        />
+      </div>
+      <div class="message-container">
+        <label for="message-input">Bericht</label>
+        <textarea
+                name="message"
+                id="message-input"
+                cols="30"
+                rows="5"
+                placeholder="Typ hier je bericht"
+        ></textarea>
+      </div>
+      <div class="form-submit">
+        <button>Verzenden ></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Gemaakt door Mehran Rassulyar</p>
+</div>
+</body>
 </html>
+
