@@ -88,26 +88,21 @@
         <p>Wil je iets vragen of samenwerken? Vul het formulier hieronder in.</p>
     </div>
     <div class="contact-main">
-        <form action="https://formsubmit.co/mehranrassulyar@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="Nieuw bericht via portfolio">
-            <input type="hidden" name="_captcha" value="false">
+        <form action="" method="get">
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="email" placeholder="Vul hier je email in" />
 
-            <div class="email-container">
-                <label for="email-input">Email</label>
-                <input type="email" id="email-input" name="email" placeholder="Vul hier je email in" required />
-            </div>
-            <div class="phone-container">
-                <label for="phone-input">Telefoon</label>
-                <input type="tel" id="phone-input" name="telefoon" placeholder="Vul hier je telefoonnummer in" />
-            </div>
-            <div class="message-container">
-                <label for="message-input">Bericht</label>
-                <textarea name="bericht" id="message-input" cols="30" rows="5" placeholder="Typ hier je bericht" required></textarea>
-            </div>
+            <label for="phone-input">Telefoon</label>
+            <input type="tel" id="phone-input" name="phone" placeholder="Vul hier je telefoonnummer in" />
+
+            <label for="message-input">Bericht</label>
+            <textarea id="message-input" name="message" rows="5" placeholder="Typ hier je bericht"></textarea>
+
             <div class="form-submit">
                 <button type="submit">Verzenden ></button>
             </div>
         </form>
+
     </div>
 </div>
 
