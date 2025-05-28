@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- NAV -->
 <div class="header">
     <div class="nav-section">
         <a href="#">Home</a>
@@ -19,20 +19,17 @@
         <a href="#project">Project</a>
         <a href="#talen">Talen</a>
         <a href="#contact">Contact</a>
-        <button id="mode-toggle" style="background:none;border:none;font-size:1rem;cursor:pointer;">
-            Licht / Donker
-        </button>
+        <button id="mode-toggle">Licht / Donker</button>
     </div>
 
+    <!-- Intro -->
     <div class="header-main-section">
         <div class="header-info">
             <div class="header-info-name">
                 <h2>Mehran Rassulyar</h2>
             </div>
             <div class="header-info-intro">
-                <p>
-                    Ik ben een gemotiveerde student Software Development. Ik hou van programmeren, websites maken en werken met Arduino. Ik leer snel, ben creatief en werk graag samen.
-                </p>
+                <p>Ik ben een gemotiveerde student Software Development. Ik hou van programmeren, websites maken en werken met Arduino. Ik leer snel, ben creatief en werk graag samen.</p>
             </div>
             <div class="header-info-btn">
                 <a href="files/CV.pdf" download><button>Download mijn CV ></button></a>
@@ -43,6 +40,7 @@
         </div>
     </div>
 
+    <!-- Skills -->
     <div class="header-company" id="talen">
         <p>Mijn vaardigheden</p>
         <div class="company-logo-container">
@@ -55,84 +53,65 @@
     </div>
 </div>
 
-<!-- OVER MIJ -->
+<!-- Over mij -->
 <div class="case-studies" id="overmij">
     <div class="case-text-container">
         <div class="case-text-header">
             <h2>Over mij</h2>
         </div>
         <div class="case-text">
-            <p>
-                Mijn naam is Mehran Rassulyar, ik ben 16 jaar en studeer Software Development op MBO niveau 4 in Velp. Ik ben nieuwsgierig, leer graag nieuwe dingen en wil mezelf blijven ontwikkelen als maker.
-            </p>
+            <p>Mijn naam is Mehran Rassulyar, ik ben 16 jaar en studeer Software Development op MBO niveau 4 in Velp. Ik ben nieuwsgierig, leer graag nieuwe dingen en wil mezelf blijven ontwikkelen als maker.</p>
         </div>
     </div>
 </div>
 
-<!-- PROJECT -->
+<!-- Project Crypto Tracker -->
 <div class="testimonial" id="project">
     <div class="testimonial-content-container">
         <div class="testimonial-header">
-            <h2>Projecten: Crypto Tracker</h2>
+            <h2>Project: Crypto Tracker</h2>
             <p>
-                In dit project heb ik een simpele website gemaakt waarmee je de prijs van een cryptocurrency (zoals bitcoin) kunt opzoeken.
-                De website gebruikt een echte API (CoinGecko) om de actuele prijs op te halen. Elke keer als je zoekt, wordt de prijs ook in een grafiek gezet.
-                Zo kun je zien hoe de prijs verandert.
+                In dit project heb ik een simpele website gemaakt waarmee je de prijs van een cryptocurrency (zoals bitcoin) kunt opzoeken. De website gebruikt een echte API (CoinGecko) om de actuele prijs op te halen en toont dit ook in een grafiek. Je ziet het verschil in prijs per zoekopdracht.
             </p>
-            <p><strong>Wat ik heb geleerd:</strong> werken met API's, prijzen ophalen, verschil in prijs laten zien en een grafiek bijhouden met JavaScript en Chart.js.</p>
-            <div class="header-info-btn" style="margin-top: 1rem;">
-                <a href="files/opdracht4.html" target="_blank">
-                    <button>Bekijk live demo ></button>
-                </a>
-            </div>
+            <p><strong>Wat ik heb geleerd:</strong> API's gebruiken, prijsverschillen tonen, grafieken maken met Chart.js en JavaScript toepassen.</p>
+        </div>
+        <div style="margin-top: 1rem;">
+            <iframe src="files/opdracht4.html" width="100%" height="500" style="border: 1px solid #ccc; border-radius: 10px;"></iframe>
         </div>
     </div>
 </div>
 
-<!-- CONTACT -->
+<!-- Contact -->
 <div class="contact" id="contact">
     <div class="contact-header">
         <h2>Contact</h2>
         <p>Wil je iets vragen of samenwerken? Vul het formulier hieronder in.</p>
     </div>
     <div class="contact-main">
-        <form action="" method="get">
+        <form action="https://formsubmit.co/mehranrassulyar@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nieuw bericht via portfolio">
+            <input type="hidden" name="_captcha" value="false">
+
             <div class="email-container">
                 <label for="email-input">Email</label>
-                <input
-                        type="email"
-                        id="email-input"
-                        name="email"
-                        placeholder="Vul hier je email in"
-                />
+                <input type="email" id="email-input" name="email" placeholder="Vul hier je email in" required />
             </div>
             <div class="phone-container">
                 <label for="phone-input">Telefoon</label>
-                <input
-                        type="tel"
-                        id="phone-input"
-                        name="phone"
-                        placeholder="Vul hier je telefoonnummer in"
-                />
+                <input type="tel" id="phone-input" name="telefoon" placeholder="Vul hier je telefoonnummer in" />
             </div>
             <div class="message-container">
                 <label for="message-input">Bericht</label>
-                <textarea
-                        name="message"
-                        id="message-input"
-                        cols="30"
-                        rows="5"
-                        placeholder="Typ hier je bericht"
-                ></textarea>
+                <textarea name="bericht" id="message-input" cols="30" rows="5" placeholder="Typ hier je bericht" required></textarea>
             </div>
             <div class="form-submit">
-                <button>Verzenden ></button>
+                <button type="submit">Verzenden ></button>
             </div>
         </form>
     </div>
 </div>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <div class="footer">
     <p>Gemaakt door Mehran Rassulyar</p>
 </div>
