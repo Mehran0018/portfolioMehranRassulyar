@@ -57,17 +57,32 @@ textarea {
   max-width: 500px;
   padding: 0.75rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #888; /* <— DONKERDER! */
   margin-bottom: 1rem;
   background-color: var(--input-bg-color);
   color: var(--main-text-color);
   font-size: 1rem;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
 }
 
 input::placeholder,
 textarea::placeholder {
   color: #888;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #1B4965;
+  background-color: #f5faff;
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+  background-color: #2b2b2b;
+  border: 1px solid #1B4965;
 }
 
 /* LABELS */
