@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Menu - Mehran's Pizza</title>
+
+    <!-- Fonts en CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../global/opdrachtGlobal.css" />
+    <link rel="stylesheet" href="opdrachtP1.css" />
+
+    <!-- Scripts -->
+    <script src="opdrachtP1.js" defer></script>
+    <script src="../global/theme.js" defer></script>
+
+    <style>
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .menu-item {
+            background-color: var(--bg);
+            color: var(--text);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.03);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            margin: 1rem 0 0.5rem;
+            text-align: center;
+            color: var(--accent);
+        }
+
+        .menu-item p {
+            text-align: center;
+            padding: 0 1rem;
+            color: var(--text);
+        }
+
+        .favorite-btn {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 0.6rem 1rem;
+            margin: 1rem auto;
+            display: block;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .favorite-btn.favorited {
+            background-color: #2a9d8f;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Pizza Menu</h1>
+    <p>Kies jouw favoriet 🍕</p>
+</header>
+
+<nav class="nav-bar">
+    <ul class="nav-links">
+        <li><a href="../Home/opdrachtHome.html">Home</a></li>
+        <li><a href="opdrachtP1.html">Menu</a></li>
+        <li><a href="../Page2/opdrachtP2.html">Contact</a></li>
+    </ul>
+    <button id="themeToggle" aria-label="Wissel licht/donker modus">🌙</button>
+</nav>
+
+<main class="menu-grid">
+    <div class="menu-item">
+        <img src="../Images/margherita.avif" alt="Margherita" />
+        <h3>Margherita</h3>
+        <p>Tomatensaus, mozzarella</p>
+        <button class="favorite-btn" data-pizza="margherita">❤️ Favoriet</button>
+    </div>
+    <div class="menu-item">
+        <img src="../Images/Salami.jpg" alt="Salami" />
+        <h3>Salami</h3>
+        <p>Tomatensaus, mozzarella, salami</p>
+        <button class="favorite-btn" data-pizza="salami">❤️ Favoriet</button>
+    </div>
+    <div class="menu-item">
+        <img src="../Images/vegetariana.jpg" alt="Vegetariana" />
+        <h3>Vegetariana</h3>
+        <p>Tomatensaus, mozzarella, groenten</p>
+        <button class="favorite-btn" data-pizza="vegetariana">❤️ Favoriet</button>
+    </div>
+    <div class="menu-item">
+        <img src="../Images/quattro-stagioni.jpg" alt="Quattro Stagioni" />
+        <h3>Quattro Stagioni</h3>
+        <p>Ham, champignons, artisjok, olijven</p>
+        <button class="favorite-btn" data-pizza="quattro-stagioni">❤️ Favoriet</button>
+    </div>
+</main>
+
+<footer>
+    <a href="../winkelwagen.html" class="cart-link">🛒 Ga naar Winkelmandje</a>
+    <p>&copy; 2025 Mehran's Pizza Restaurant</p>
+</footer>
+</body>
+</html>

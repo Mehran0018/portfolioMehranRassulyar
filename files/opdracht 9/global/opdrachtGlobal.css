@@ -1,0 +1,163 @@
+/* === KLEURVARIABELEN === */
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --accent: #e63946;
+    --accent-dark: #ba1f33;
+    --link: #1d3557;
+    --hover: #ffb703;
+    --nav: #f0f0f0;
+    --header: #1d3557;
+    --header-text: #f1faee;
+}
+
+.dark-mode {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --accent: #ff6b6b;
+    --accent-dark: #c0392b;
+    --link: #8ecae6;
+    --hover: #ffd166;
+    --nav: #1e1e1e;
+    --header: #1d3557;
+    --header-text: #f1faee;
+}
+
+/* === BASISLAYOUT === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--header);
+    color: var(--header-text);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--nav);
+    color: var(--text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* === NAVIGATIE === */
+nav,
+.nav-bar {
+    background-color: var(--nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+nav ul,
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a,
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--hover);
+}
+
+#mode-toggle, #themeToggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text);
+    cursor: pointer;
+}
+
+/* === FORMULIER === */
+.contact-form form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.contact-form button {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent-dark);
+}
+
+/* === CART CONTAINER === */
+.cart-container {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.remove-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: var(--accent-dark);
+}
+
+.cart-link {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--accent);
+}

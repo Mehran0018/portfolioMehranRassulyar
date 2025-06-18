@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Winkelmandje - Mehran's Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../global/opdrachtGlobal.css" />
+
+    <!-- JS -->
+    <script src="../global/theme.js" defer></script>
+    <script src="winkelwagen.js" defer></script>
+
+    <style>
+        .cart-container {
+            max-width: 700px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: var(--bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #ccc;
+            color: var(--text);
+        }
+
+        .remove-btn {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .remove-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>🛒 Jouw Winkelmandje</h1>
+</header>
+
+<nav class="nav-bar">
+    <ul class="nav-links">
+        <li><a href="../Home/opdrachtHome.html">Home</a></li>
+        <li><a href="../Page1/opdrachtP1.html">Menu</a></li>
+        <li><a href="../Page2/opdrachtP2.html">Contact</a></li>
+    </ul>
+    <button id="themeToggle" aria-label="Wissel modus">🌙</button>
+</nav>
+
+<main class="cart-container">
+</main>
+
+<footer>
+    <a href="../Page1/opdrachtP1.html" class="cart-link">← Terug naar het menu</a>
+    <p>&copy; 2025 Mehran's Pizza Restaurant</p>
+</footer>
+</body>
+</html>
